@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layoutFrontRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="140dp"
+                android:layout_height="220dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                android:src="@drawable/avatar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:text="Avatar: The Way of \nWater"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Epic Science Fiction"
+                android:textColor="#353935"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="140dp"
+                android:layout_height="220dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
+                android:src="@drawable/adipurush"
+                app:shapeAppearanceOverlay="@style/RoundImage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:text="Adipurush"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Mythological Film"
+                android:textColor="#353935"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="140dp"
+                android:layout_height="220dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
+                android:src="@drawable/kantara"
+                app:shapeAppearanceOverlay="@style/RoundImage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:text="Kantara"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Action Thriller"
+                android:textColor="#353935"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="140dp"
+                android:layout_height="220dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/radhe"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
+                app:shapeAppearanceOverlay="@style/RoundImage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:text="Radhe Shyam"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Romantic Drama"
+                android:textColor="#353935"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="140dp"
+                android:layout_height="220dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
+                android:src="@drawable/rrr"
+                app:shapeAppearanceOverlay="@style/RoundImage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:text="RRR"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Epic Action Drama Film"
+                android:textColor="#353935"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="140dp"
+                android:layout_height="220dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
+                android:src="@drawable/kgf"
+                app:shapeAppearanceOverlay="@style/RoundImage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:text="KGF: Chapter2"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Periodic action drama file"
+                android:textColor="#353935"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="140dp"
+                android:layout_height="220dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
+                android:src="@drawable/bramhastra"
+                app:shapeAppearanceOverlay="@style/RoundImage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:text="Bramhastra"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="fantasy action-adventure film"
+                android:textColor="#353935"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</HorizontalScrollView>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activities.LoginScreen">
+
+
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="SKIP"
+        android:cursorVisible="false"
+        android:textColor="@color/cardview_dark_background"
+        android:background="@color/white"/>
+
+
+
+
+    <Button
+        android:id="@+id/btnLoginWithGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/buttonshape"
+        android:drawableLeft="@drawable/google2"
+        android:paddingLeft="10dp"
+        android:text="    Continue With Google"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnLoginWithEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/buttonshape"
+        android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+        android:fontFamily="@font/font2"
+        android:text="     Continue With Email"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/font4"
+        android:gravity="center"
+        android:text="OR"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp">
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:src="@drawable/india" />
+
+
+        <TextView
+            android:id="@+id/tvCountryID"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="7dp"
+            android:layout_toEndOf="@+id/flag"
+            android:gravity="center"
+            android:text=" +91"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etLoginWithNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-0dp"
+            android:layout_marginEnd="3dp"
+            android:layout_toEndOf="@+id/tvCountryID"
+            android:backgroundTint="@color/black"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:hint="Continue with Number                              "
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/cardview_dark_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:gravity="bottom|center"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:text="I agree to the"/>
+
+        <TextView
+            android:textColor="@color/cardview_dark_background"
+            android:id="@+id/terms_and_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:gravity="bottom|center"
+            android:textAlignment="center"
+            android:text=" Terms &amp; Conditions"/>
+
+        <TextView
+            android:textColor="@color/cardview_dark_background"
+            android:id="@+id/privacy_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:gravity="bottom|center"
+            android:textAlignment="center"
+            android:text=" and Privacy Policy"/>
+
+    </LinearLayout>
+</LinearLayout>

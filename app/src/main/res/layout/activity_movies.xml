@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Activities.MoviesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222539"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_baseline_search_24" />
+
+        <TextView
+            android:id="@+id/nowShowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/back"
+            android:text="Now Showing"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="back"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nowShowing"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/back"
+            android:text="Tirupati | 12 Movies"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollIndicators="right"
+        android:scrollbarSize="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    app:sliderAnimationDuration="200"
+                    app:sliderAutoCycleDirection="right"
+                    app:sliderAutoCycleEnabled="false"
+                    app:sliderIndicatorAnimationDuration="200"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="20dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="@color/white"
+                    app:sliderIndicatorUnselectedColor="#808080"
+                    app:sliderScrollTimeInSec="3"
+                    app:sliderStartAutoCycle="true" />
+            </RelativeLayout>
+
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/movies" />-->
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbarThumbVertical="@android:color/black">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <Button
+                            android:id="@+id/btnEnglish"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/lanbtn2"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:text="Telugu"
+                            android:textAllCaps="false"
+                            android:textColor="#C62222" />
+
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent" />
+
+
+                        <Button
+                            android:id="@+id/btnHindi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/lanbtn2"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:text="Tamil"
+                            android:textAllCaps="false"
+                            android:textColor="#C62222" />
+
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:id="@+id/btnJapanese"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/lanbtn2"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:text="Hindi"
+                            android:textAllCaps="false"
+                            android:textColor="#C62222" />
+
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:id="@+id/btnPunjabi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/lanbtn2"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:text="English"
+                            android:textAllCaps="false"
+                            android:textColor="#C62222" />
+
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:id="@+id/btnTelugu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/lanbtn2"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:text="Kannada"
+                            android:textAllCaps="false"
+                            android:textColor="#C62222" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/coming" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_marginBottom="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:scaleType="fitXY">
+
+                <Button
+                    android:layout_marginLeft="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Browse by Cinemas"
+                    android:textAllCaps="false"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/marker"
+                    android:background="@drawable/oval"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="130dp"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/funnel"
+                    android:backgroundTint="@color/light_red"
+                    android:background="@color/light_red"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

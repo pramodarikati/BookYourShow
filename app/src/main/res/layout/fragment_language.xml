@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".Fragments.LanguageFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Avatar: The Way of Water" />
+
+            <TextView
+                android:id="@+id/tvFilmyPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawablePadding="10dp"
+                android:textStyle="bold"
+                android:text="Select language and format"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2F2F2"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/font3"
+                android:padding="10dp"
+                android:text="English"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn2D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="2D"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#C62222"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn4D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="4DX 3D"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#C62222"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btnMx4d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="MX4D 3D"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#C62222"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn3D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="3D"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#C62222"
+                    android:textSize="13sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnImax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="IMAX 3D"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#C62222"
+                    android:textSize="13sp" />
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2F2F2"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/font3"
+                android:padding="10dp"
+                android:text="Hindi"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn3D2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="3D"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#C62222"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn4D2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="2D"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#C62222"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btnMx4d2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="4DX 3D"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#C62222"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn3D21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="MX4D 3D"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#C62222"
+                    android:textSize="13sp" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
